@@ -1,0 +1,15 @@
+[package]
+name = "pure_lang_compiler_base"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+global = { package = "pure_lang_global", path = "../../global" }
+rustc-literal-escaper = "0.0.5"
+memchr = "2.7.4"
+unicode-xid = "0.2.0"
+
+[dependencies.unicode-properties]
+version = "0.1.0"
+default-features = false
+features = ["emoji", "general-category"]
